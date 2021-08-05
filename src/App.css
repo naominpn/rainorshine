@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.Header{
+  font-family: 'Righteous', cursive;
+  font-size: 3em;
+  font-weight: normal;
+  color: white;
+  text-shadow: 4px 2px brown, 8px 6px 0px firebrick, 12px 10px 0px chocolate, 16px 14px 0px goldenrod ;
+}
+
+body{
+  background-color: beige;
+}
+
+.Main{
+  border: solid 10px rgb(39, 38, 38);
+  border-radius: 20px;
+  width: 70%;
+  margin: auto;
+
 }

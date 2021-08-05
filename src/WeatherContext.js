@@ -13,7 +13,7 @@ export function WeatherProvider(props) {
           axios
               .get(`https://api.openweathermap.org/data/2.5/onecall?lat=${data[location].lat}&lon=${data[location].lon}&exclude=hourly,minutely&appid=8404fc7b2bbd4a1a4d6a797d61b3cbb0`)
               .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 setCityWeatherForecast([res.data])
               })
         } else {
