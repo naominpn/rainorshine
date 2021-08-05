@@ -3,37 +3,7 @@ import './App.css';
 // import LocationSelect from './LocationSelect.js'
 // import CurrrentWeather from './CurrentWeather.js';
 import axios from 'axios'
-
-const data = {
-  'sydney': 
-    {lat: -33.8679,
-    lon: 151.2073},
-
-  'tokyo': 
-    {lat: 35.6895,
-    lon: 139.6917},
-  
-  'los angeles': 
-    {lat: 34.0522,
-    lon: -118.2437},
-
-  'london': 
-    {lat: 51.5085,
-    lon: -0.1257},
-
-  'paris': 
-    {lat: 48.8534,
-    lon: 2.3488}
-}
-
-// function WeatherData() {
-  
-  
-// }
-
-
-
-
+import data from './data.js'
 
 function App() {
   const [cityWeatherForecast, setCityWeatherForecast] = useState([])
@@ -61,6 +31,8 @@ function App() {
     return (tempK - 273.15).toFixed(2)
   }
   
+  
+
   return (
     <div className="App">
         {/* <Heading /> */}
@@ -87,20 +59,29 @@ function App() {
                 <p>{toCelcius(cityWeatherForecast[0].current.temp)} °C</p>
               </div> 
           }
-          
-          
+        </div>
+
+
+        <div className="week-weather">
+          {
+            cityWeatherForecast.length === 0
+            ? <p></p>
+            : <div className="days-weather">
+                <h1>7 day forecast</h1>
+                
+                  {cityWeatherForecast[0].daily.slice(1).map((day, index) => 
+                    <div>
+                      <p>{toDate(day.dt, cityWeatherForecast[0].timezone)}</p>
+                      <p>{day.weather[0].main}</p>                  
+                      <p>{toCelcius(day.temp.day)}°C</p>
+                    </div>
+                    )
+                  }
+              </div> 
+          }
         </div>
 
         {/* <CurrrentWeather /> */}
-
-        {/* <div className="weather-week">
-        <WeatherDayCard />
-        <WeatherDayCard />
-        <WeatherDayCard />
-        <WeatherDayCard />
-        <WeatherDayCard />
-
-        </div> */}
 
     </div>
   );
