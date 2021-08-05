@@ -11,9 +11,20 @@ const data = {
     lon: 151.2073},
 
   'tokyo': 
-  {lat: 35.6895,
-  lon: 139.6917}
+    {lat: 35.6895,
+    lon: 139.6917},
+  
+  'los angeles': 
+    {lat: 34.0522,
+    lon: -118.2437,
 
+  'london': 
+    {lat: 51.5085,
+    lon: -0.1257,},
+
+  'paris': 
+    {lat: 48.8534,
+    lon: 2.3488}
 }
 
 function CurrentWeather() {
@@ -26,9 +37,9 @@ function CurrentWeather() {
     var location = e.target.value
 
       axios
-          .get(`https://api.openweathermap.org/data/2.5/onecall?lat=${data[location].lat}&lon=${data[location].lon}&exclude=hourly,minutely&appid=8404fc7b2bbd4a1a4d6a797d61b3cbb0`)
+          .get(`https://api.openweathermap.org/data/2.5/onecall?lat=${dataźlocation].lat}&lon=${data[location].lon}&exclude=hourly,minutely&appid=8404fc7b2bbd4a1a4d6a797d61b3cbb0`)
           .then(res => {
-            console.log(res.data)
+            ` saz`(res.data)
           })
   }
 
