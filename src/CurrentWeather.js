@@ -1,10 +1,10 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
-export default function CurrrentWeather() {
-    // const [option, setOption] = useState('Sydney')
+// export default function CurrrentWeather() {
+//     // const [option, setOption] = useState('Sydney')
 
-    const handleChange = e => {
-        axios
-            .get(``)
-    }
-} 
+//     const handleChange = e => {
+//         axios
+//             .get(``)
+//     }
+// } 
