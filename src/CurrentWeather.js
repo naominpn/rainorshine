@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { WeatherContext} from './WeatherContext';
 import {toCelcius, toDate} from './conversionFunctions'
 
-export default function CurrrentWeather(props) {
+export default function CurrrentWeather() {
     const { cityWeatherForecast } = useContext(WeatherContext)
     
    return( 
