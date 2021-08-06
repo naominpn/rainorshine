@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { WeatherContext} from './WeatherContext';
+import { WeatherContext} from './../WeatherContext';
 
 export default function HeadingWeek() {
     const { cityWeatherForecast } = useContext(WeatherContext)
@@ -8,7 +8,7 @@ export default function HeadingWeek() {
             {
             cityWeatherForecast.length === 0
             ? <h1></h1>
-            :<h1>7 day forecast</h1>
+            :<h1 className="heading-week">7 day forecast</h1>
             }
         </div>
     )

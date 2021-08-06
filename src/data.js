@@ -2,6 +2,10 @@ const data = {
     'sydney': 
       {lat: -33.8679,
       lon: 151.2073},
+
+    'melbourne':
+    {lat: -37.814,
+    lon: 144.9633},
   
     'tokyo': 
       {lat: 35.6895,

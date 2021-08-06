@@ -1,11 +1,17 @@
 .slick-prev {
-    left: 5px;
+    left: -25px;
+    z-index: 1;
 }
 
 .slick-next {
-    right: 5px;
+    right: -25px;
 }
 
 .slick-next:before, .slick-prev:before {
     color: rgb(39, 39, 39)
+}
+
+.week-weather{
+    width: 90%;
+    margin: auto;
 }

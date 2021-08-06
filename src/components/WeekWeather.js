@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { WeatherContext} from './WeatherContext';
+import { WeatherContext} from './../WeatherContext';
 import DayWeather from './DayWeather';
 import './WeekWeather.css'
 import Slider from "react-slick";
@@ -9,7 +9,9 @@ import Slider from "react-slick";
 export default function WeekWeather () {  
     const { cityWeatherForecast } = useContext(WeatherContext)
     const settings = {
-      infinite: true,
+      infinite: false,
+      slickGoTo: false,
+      onInit: null,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3
