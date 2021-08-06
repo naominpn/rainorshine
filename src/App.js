@@ -3,6 +3,7 @@ import Header from './Header.js'
 import LocationSelect from './LocationSelect';
 import CurrrentWeather from './CurrentWeather';
 import WeekWeather from './WeekWeather';
+import HeadingWeek from './HeadingWeek'
 
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
         <div className="Main">
           <LocationSelect/>
           <CurrrentWeather/>
+          <HeadingWeek />
           <WeekWeather/>
-          </div>
+        </div>
     </div>
   );
 }

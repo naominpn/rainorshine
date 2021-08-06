@@ -1,0 +1,9 @@
+.week-weather{
+    display: flex;
+    width: 100vh;
+}
+
+.overflow-scrolling {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}

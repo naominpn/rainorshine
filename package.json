@@ -9,6 +9,7 @@
     "axios": "^0.21.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-overflow-scrolling": "^1.0.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -18,7 +19,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build; surge build rain-or-shine.surge.sh"
-
   },
   "eslintConfig": {
     "extends": [
