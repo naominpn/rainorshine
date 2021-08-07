@@ -9,8 +9,9 @@ export default function CurrrentWeather() {
    <div className="current-weather">
        {
        cityWeatherForecast.length === 0
-       ? <p></p>
-       : <section className="current-section">
+       ? <p></p> //loading component
+       : <section className="current-section"> 
+       {/* make into seperate component */}
                 <div className="current-leftSide">
                     <p className="heading-date">
                         {getDay(cityWeatherForecast[0].current.dt, cityWeatherForecast[0].timezone)}, {toDate(cityWeatherForecast[0].current.dt, cityWeatherForecast[0].timezone)}
