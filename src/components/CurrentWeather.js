@@ -48,7 +48,7 @@ export default function CurrrentWeather() {
                     <p className="today-info">{toCelcius(cityWeatherForecast[0].daily[0].temp.max)}°C 
                         <span className="label"> Low </span>
                     </p>
-                    <p className="today-info">{Math.rouch(cityWeatherForecast[0].daily[0].pop*100)}% 
+                    <p className="today-info">{Math.round(cityWeatherForecast[0].daily[0].pop*100)}% 
                         <span className="label"> Rain </span>
                     </p>
                     <p className="today-info">
