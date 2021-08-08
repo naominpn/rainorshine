@@ -81,10 +81,6 @@ span{
   font-weight: 400;
 }
 
-.heading-week-div{
-  margin-top: 10%;
-}
-
 @media only screen and (max-width: 600px) {
   .Header{
     font-size: 2em;
@@ -97,6 +93,10 @@ span{
 
   p{
     font-size: 0.7em;
+  }
+
+  .heading-week-div{
+    margin-top: 10%;
   }
 
   .Main{
