@@ -18,7 +18,7 @@ export default function WeekWeather () {
     }
 
     return(
-        <div >
+        <div className="week-section">
             {
             cityWeatherForecast.length === 0
             ? <p></p>

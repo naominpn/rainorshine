@@ -4,12 +4,16 @@ const data = {
       lon: 151.2073},
 
     'melbourne':
-    {lat: -37.814,
+      {lat: -37.814,
     lon: 144.9633},
   
     'tokyo': 
       {lat: 35.6895,
       lon: 139.6917},
+    
+    'akita':
+      {lat: 39.7200,
+      lon: 140.1035},
     
     'los angeles': 
       {lat: 34.0522,

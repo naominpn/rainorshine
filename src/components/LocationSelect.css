@@ -11,3 +11,16 @@ select{
     font-size: 2em;
     font-family: 'JetBrains Mono', monospace;
 }
+
+
+@media only screen and (max-width: 600px) {
+    select{
+        font-size: 1em;
+        width: 95%;
+    }
+
+    .location-select{
+        width: 95%;
+        margin: auto;
+    }
+}

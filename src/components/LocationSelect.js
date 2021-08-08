@@ -12,6 +12,7 @@ export default function LocationSelect() {
                 <option value="sydney">Sydney, AU</option>
                 <option value="melbourne">Melbourne, AU</option>
                 <option value="tokyo">Tokyo, JP</option>
+                <option value="akita">Akita, JP</option>
                 <option value="los angeles">Los Angeles, US</option>
                 <option value="london">London, UK</option>
                 <option value="paris">Paris, FR</option>

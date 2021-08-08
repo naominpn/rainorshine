@@ -49,8 +49,7 @@ html, body {
   left: 50%;
   transform: translateX(-50%) translateY(-90px);
   white-space: nowrap;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 0 2%;
 }
 
 
@@ -63,8 +62,7 @@ body{
   border-radius: 20px;
   width: 70%;
   margin: 5% auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0
 }
 
 p{
@@ -81,4 +79,30 @@ p{
 span{
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
+}
+
+.heading-week-div{
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Header{
+    font-size: 2em;
+    transform: translateX(-50%) translateY(-58px);
+  }
+
+  .heading-currently, .heading-week{
+    font-size: 1em;
+  }
+
+  p{
+    font-size: 0.7em;
+  }
+
+  .Main{
+    border: solid 5px rgb(39, 38, 38);
+    width: 80%;
+    padding: 30px 10px;
+    margin: 10% auto 5% auto;
+  }
 }

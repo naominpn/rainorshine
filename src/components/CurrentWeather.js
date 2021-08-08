@@ -32,23 +32,31 @@ export default function CurrrentWeather() {
 
 
                 <div className="current-rightSide">
-                    <p className="today-info">{toCelcius(cityWeatherForecast[0].daily[0].temp.min)}°C High</p>
-                    <p className="today-info">{cityWeatherForecast[0].daily[0].wind_speed}m/s Wind</p>
+                    <p className="today-info">{toCelcius(cityWeatherForecast[0].daily[0].temp.min)}°C 
+                        <span className="label">High</span>
+                    </p>
+                    <p className="today-info">{cityWeatherForecast[0].daily[0].wind_speed}m/s 
+                        <span className="label">Wind</span>
+                    </p>
                     <p className="today-info">
                         {
                             toTime(cityWeatherForecast[0].daily[0].sunrise, 
                             cityWeatherForecast[0].timezone)
                         } 
-                         <span> Sunrise</span>
+                         <span className="label"> Sunrise</span>
                     </p>
-                    <p className="today-info">{toCelcius(cityWeatherForecast[0].daily[0].temp.max)}°C Low</p>
-                    <p className="today-info">{cityWeatherForecast[0].daily[0].pop*100}% <span> Rain </span></p>
+                    <p className="today-info">{toCelcius(cityWeatherForecast[0].daily[0].temp.max)}°C 
+                        <span className="label"> Low </span>
+                    </p>
+                    <p className="today-info">{cityWeatherForecast[0].daily[0].pop*100}% 
+                        <span className="label"> Rain </span>
+                    </p>
                     <p className="today-info">
                         {
                             toTime(cityWeatherForecast[0].daily[0].sunset, 
                             cityWeatherForecast[0].timezone)
                         } 
-                         <span> Sunset</span>
+                         <span className="label">Sunset</span>
                     </p>
                 </div>
         </section> 
